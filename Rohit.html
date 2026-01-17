@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rohit — Creative Web Developer (@vishwakarmarohit0266)</title>
+  <meta name="description" content="Rohit ( @developerrohit0266 ) — Creative Web Developer: HTML5 • CSS • JavaScript • Python • UI Cloning" />
+  <link rel="stylesheet" href="/main3.css">
+    <!-- Welcome Modal Styles -->  <style>
+    .modal {
+      display: block;
+      position: fixed;
+      z-index: 1000;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+    .modal-content {
+    background: linear-gradient(90deg, #FF8B00 0%, #ffffff,#43a047 100%);
+    color: rgba(0, 78, 255, 1);
+      padding: 20px;
+      margin: 15% auto;
+      width: 300px;
+      text-align: center;
+      border-radius: 8px;
+    }
+  </style></head><body><!-- Welcome Popup on Page Load --><div class="modal" id="popup">
+  <div class="modal-content">
+    <h2>Welcome!</h2>
+    <p>Welcome to my webpage.</p>
+    <button onclick="closePopup()">OK</button>
+  </div>
+</div><div class="wrap">
+  <main class="card" role="main"><section class="hero">
+  <div class="handle">
+    <a class="link-btn" href="https://www.instagram.com/vishwakarmarohit0266?igsh=aGY3MzFjMWUyenJy">
+      @vishwakrmarohit0266
+    </a>
+  </div>
+
+  <h1>Rohit — Creative Web Developer</h1>
+
+  <div class="tagline">
+    I blend design, code, and curiosity to craft interactive websites and polished UI clones.
+  </div>
+
+  <p>
+    From HTML5 foundations to expressive CSS and JavaScript interactions, I build modern,
+    accessible experiences that feel delightful and perform reliably.
+  </p>
+
+  <div class="badges" aria-hidden="true">
+    <span class="badge">HTML5</span>
+    <span class="badge">CSS</span>
+    <span class="badge">JavaScript</span>
+    <span class="badge">Python</span>
+    <span class="badge">UI Cloning</span>
+  </div>
+
+  <div class="cta-row">
+    <button class="btn btn-primary" id="seeWork">See my work</button>
+    <button class="btn btn-ghost" id="contactMe">Contact</button>
+  </div>
+
+  <p class="small" style="margin-top:22px;color:var(--muted);font-size:13px">
+    *Code with creativity. Design with purpose.*
+  </p>
+
+  <!-- Exit Link with Confirm Popup -->
+  <p style="margin-top:20px;">
+    <a class="link-btn" href="https://vishwakarmarohit0266.github.io/" onclick="return confirmLeave()">
+      Exit Website
+    </a>
+  </p>
+</section>
+
+<aside class="preview" aria-label="live preview">
+  <div class="title">Live preview — built with HTML5 • CSS • JavaScript</div>
+  <div class="mock" id="mock">
+    <h3 id="mock-heading">Interactive UI</h3>
+    <p id="mock-sub">Loading demo components…</p>
+  </div>
+  <div class="skills" aria-live="polite">
+    Now showing: <span id="skillText">HTML5</span>
+    <span class="cursor" aria-hidden="true"></span>
+  </div>
+  <div class="small">Hero snippet ready to drop into your portfolio or landing page.</div>
+</aside>
+
+  </main>
+</div><script src="/main3.js"></script><!-- Scripts --><script>
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+  }
+
+  function confirmLeave() {
+    return confirm("Are you sure you want to leave?");
+  }
+</script></body>
+</html>
